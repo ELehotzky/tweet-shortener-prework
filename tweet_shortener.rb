@@ -19,7 +19,8 @@ end
 def word_substituter(tweet)
   words = []
   original = tweet.split(" ")
-  original.each {|x| if dictionary[x.downcase]
+  original.each {
+    |x| if dictionary[x.downcase]
     words << dictionary[x.downcase]
   else
     words << x
