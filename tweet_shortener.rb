@@ -42,11 +42,6 @@ def selective_tweet_shortener
 end
 
 
-  if tweet.length > 140 
-+    word_substituter(tweet)
-+  else 
-+    tweet
-+  end
 
 def shortened_tweet_truncator
   
