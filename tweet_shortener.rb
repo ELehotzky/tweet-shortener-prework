@@ -31,13 +31,10 @@ def word_substituter(tweet)
 
 def bulk_tweet_shortener(tweets)
   tweets.each {
-    |x| puts word_substituter(tweet) 
+    |tweet| puts word_substituter(tweet) 
   }
   
 end
-
-+  tweets.each{|tweet| puts word_substituter(tweet)}
-
 
 def selective_tweet_shortener
   
