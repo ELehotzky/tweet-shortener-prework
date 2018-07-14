@@ -17,21 +17,18 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  words = tweet.split(" ")
-  dictionary.each do |long, short|
-    subs = subs.map do |word|
-      if word.downcase == orig_word
-        word = short
-      end
-    end
-      subs.join(" ")
+  words = []
+  original = tweet.split(" ")
+  original.each {|x| if dictionary[x.downcase]
+    words << dictionary[x.downcase]
+  else
+    words << x
+  end 
+  }
+  words.join(" ")
   end
   
 end
-
-
-
-
 
 
 
