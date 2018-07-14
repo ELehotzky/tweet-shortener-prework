@@ -33,6 +33,9 @@ def bulk_tweet_shortener
   
 end
 
++  tweets.each{|tweet| puts word_substituter(tweet)}
+
+
 def selective_tweet_shortener
   
 end
